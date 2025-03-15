@@ -1,0 +1,124 @@
+/* Navbar container */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(3, 49, 255); /* Ya koi bhi color jo chahiye */
+  z-index: 1000; /* Ensure it's above other elements */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+  
+  /* Logo Section */
+  .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .logo {
+    height: 50px;
+   
+  }
+  
+  .brand {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .brand-name {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .brand-subtext {
+    font-size: 22px;
+    color: #f08c00;
+    font-weight: 600;
+  }
+  
+  /* Navigation Links */
+  .nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+  }
+  
+  .nav-item {
+    font-size: 18px;
+    color: #ffffff;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+    padding: 7px;
+    border-radius: 10px; 
+    margin-top: 15px;
+    text-decoration: none;
+    font-family:  'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 300;
+  }
+  .nav-item:hover {
+    color: rgb(255, 255, 255);
+    padding: 7px;
+    background-color: #fc4343; 
+    border-radius: 7px;
+  }
+  
+  /* "NEW" Badge */
+  .new-badge {
+    background-color: #ff0066;
+    color: white;
+    font-size: 10px;
+    padding: 2px 5px;
+    border-radius: 50px;
+    position: absolute;
+    top: -10px;
+    right: -20px;
+  }
+  
+  /* Buy Button */
+  .buy-btn {
+    background-color: #f08c00;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-right: 40px;
+  }
+  
+  .buy-btn:hover {
+    background-color: #e07b00;
+  }
+
+  .buy-login{
+    background-color: #f08c00;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-right: -100px;
+  }
+  
+  .buy-login:hover{
+    background-color: #e07b00;
+  }
