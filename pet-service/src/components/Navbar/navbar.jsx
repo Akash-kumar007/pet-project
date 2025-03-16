@@ -5,7 +5,7 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       <div className="logo-container">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlldm7AVyElQFK8bnR6m40nmWBf2-tnd1BzQ&s" alt="Frizty Logo" className="logo" />
+        <img src="https://png.pngtree.com/png-vector/20230427/ourmid/pngtree-bone-dog-pet-logo-vector-png-image_6718231.png" alt="Frizty Logo" className="logo" />
         <div className="brand">
           <span className="brand-name">TAIL</span>
           <span className="brand-subtext">MATE</span>
@@ -14,9 +14,9 @@ export default function Navbar() {
 
       <ul className="nav-links">
       <Link className="nav-item" to="/">Home</Link>
-        <li className="nav-item">Pet Ticketing</li>
-        <li className="nav-item">Pet Friendly Cafes</li>
-        <li className="nav-item relative">Medical Services</li>
+        <Link className="nav-item" to="/petticket">Pet Ticketing</Link>
+        <Link className="nav-item" to="/petfriendlycafs">Pet Friendly Cafes</Link>
+        <Link className="nav-item relative" to="medicalservice">Medical Services</Link>
         <Link className="nav-item" to="/services">Services</Link>
 
        
@@ -24,15 +24,12 @@ export default function Navbar() {
 
     
     
-      <button className="buy-login">
+      <Link className="buy-login"to="/login"  >
       <i className="bi bi-person-circle"></i> 
-        LOGIN
-      </button>
+       SIGNUP
+      </Link>
 
-      <button className="buy-btn">
-      <i className="bi bi-cart-fill"></i>
-        CART
-      </button>
+     
     </nav>
   );
 }
