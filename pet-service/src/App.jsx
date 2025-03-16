@@ -11,6 +11,7 @@ import PetTicket from './components/petticket/petticket';
 import Petfriendlycafs from './components/pet driendly cafs/petfriendlycafs';
 import MedicalServices from './components/medicalservice/medicalservice';
 import BookAppointment from './components/medicalservice/bookappointment';
+import Petsdetails from './components/petsdetails';
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
         <Route path="/login" element={< SignUp/>} />
         <Route path="/petticket" element={< PetTicket/>} />
         <Route path="/Petfriendlycafs" element={< Petfriendlycafs/>} />
+        <Route path="/pet/:id" element={<Petsdetails/>} />
         <Route path="/medicalservice" element={< MedicalServices/>} />
         <Route path="/book-appointment" element={<BookAppointment />} />
       </Routes>
